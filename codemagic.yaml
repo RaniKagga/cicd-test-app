@@ -7,5 +7,5 @@ workflows:
               script: echo "Welcome to CICD Setup"
         publishing:
             email:
-                receipients:
+                recipients:
                     - nagarani.kagga@gmail.com
