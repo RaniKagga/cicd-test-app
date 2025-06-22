@@ -5,8 +5,8 @@ workflows:
         scripts:
             - name: CICD Started
               script: echo "Welcome to CICD Setup"
-            - name:
-              script: xcodebuild build -workspace "SampleCICDTestApp.xcodeproj" -scheme "SampleCICDTestApp" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            - name: Build App
+              script: xcodebuild build -xcode-project "SampleCICDTestApp.xcodeproj" -scheme "SampleCICDTestApp" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
         publishing:
             email:
                 recipients:
